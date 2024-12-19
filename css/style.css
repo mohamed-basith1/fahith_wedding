@@ -1100,6 +1100,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%; /* Make the image circular */
   object-fit: contain; /* Ensure the image covers the circular area */
+  background-color: #F5F5F5;
 
 }
 @media screen and (max-width: 480px) {
