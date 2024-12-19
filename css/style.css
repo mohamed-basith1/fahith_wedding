@@ -305,12 +305,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   /* background-repeat: no-repeat; */
   position: relative;
   width: 100%;
-
   background-image:url('../images/topImage2.png');
 }
 .fh5co-cover .overlay {
@@ -1088,16 +1087,20 @@ form label {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
 }
 .couple-half .groom img, .couple-half .bride img {
-  width: 150px;
-  height: 150px;
+  width: 100%; /* Make the image responsive */
+  max-width: 170px; /* Restrict the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 170px; /* Restrict the maximum height */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
-  border-radius: 50%;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: contain; /* Ensure the image covers the circular area */
+
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
@@ -1557,7 +1560,7 @@ form label {
   outline: none;
 }
 
-.fh5co-nav-toggle {
+/* .fh5co-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -1650,7 +1653,7 @@ form label {
   width: 44px;
   z-index: 2001;
   border-bottom: none !important;
-}
+} */
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
     display: block;
