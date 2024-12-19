@@ -97,7 +97,7 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2_1.jpg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row" >
@@ -154,9 +154,8 @@
 						<img src="images/groom.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-						<h3>Mohamed Fahith</h3>
-						<p>Bachelor of Computer Applications (BCA).</p>
-						<!-- <p>A passionate explorer with a love for travel, sports, and all things adventurous. Always up for a challenge and excited to share this special moment with you!</p> -->
+						<h3>Mohamed Fahith <p style="font-size: small;">BCA</p></h3>
+						<p>"Beautiful moments ahead".As a friendly nature partner waiting towards adventurous journey of our new beginning.We are excited to share this special welcome to join us.</p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -165,9 +164,8 @@
 						<img src="images/bride.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
-						<h3>Fasila Noori</h3>
-						<p>Bachelor of Computer Applications (BCA)., (Mubaliga)</p>
-						<!-- <p>A talented dancer with a heart full of passion, her creativity and dedication shine in everything she does. We can’t wait to celebrate this special day with you and share in the joy of her beautiful journey!</p> -->
+						<h3>Fasila Noori <p style="font-size: small;">BCA.,Mubaliga</p></h3>
+						<p>"Magical days loading".Hoping for best I found my half with my whole heart.Looking forward everyone on our biggest day where we are going to begin our dream journey.</p>
 					</div>
 				</div>
 			</div>
@@ -176,14 +174,14 @@
 
 	<div id="fh5co-event" class="fh5co-bg">
     <video autoplay muted loop id="background-video">
-        <source src="video/Palakkad-STD.mp4" type="video/mp4">
+        <source src="video/masjid.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                <span>Our Special Events</span>
+                <!-- <span>Our Special Events</span> -->
                 <h2>Wedding Events</h2>
             </div>
         </div>
@@ -193,10 +191,10 @@
                    <div class="col-md-10 col-md-offset-1" style="display: flex; justify-content: center;">
     <div class="col-md-6 col-sm-6 text-center" style="display: flex; flex-direction: column; justify-content: center;">
         <div class="event-wrap animate-box">
-            <h3>Wedding</h3>
+            <h3>Nikkah</h3>
             <div class="event-col">
                 <i class="icon-clock"></i>
-                <span>Nikkah Time</span>
+                <span>Time</span>
                 <span>12:15 PM</span>
             </div>
             <div class="event-col">
@@ -219,8 +217,8 @@
 			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Event</h2>
-					<p>Wedding schedule.</p>
+					<h2>Happily Ever After</h2>
+					<p>Join us to celebrate the beginning of our forever.</p>
 				</div>
 			</div>
 
@@ -632,8 +630,8 @@
 	<script>
         // Define the target date and time in IST
         var targetYear = 2025;
-        var targetMonth = 01; // December
-        var targetDay = 06;
+        var targetMonth =  0o1; // December
+        var targetDay = 0o6;
         var targetHour = 0;   // Midnight (00:00 IST)
         var targetMinute = 0;
         var targetSecond = 0;
@@ -648,7 +646,7 @@
 
         // Create the target date in UTC
         var targetDateUTC = new Date(Date.UTC(targetYear, targetMonth - 1, targetDay, utcHour, utcMinute, targetSecond));
-console.log("targetDateUTC",targetDateUTC)
+
         // Initialize Simply Countdown with the correct UTC values
         simplyCountdown('.simply-countdown-one', {
             year: targetDateUTC.getUTCFullYear(),

@@ -305,11 +305,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   position: relative;
   width: 100%;
+
+  background-image:url('../images/topImage2.png');
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -327,6 +329,8 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+  
+    background-image:url('../images/Mobile.png');
   }
 }
 .fh5co-cover .display-t,
@@ -951,7 +955,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  /* background: rgba(241, 78, 149, 0.8); */
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
